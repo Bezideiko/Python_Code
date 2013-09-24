@@ -1,0 +1,1 @@
+Write a program that uses these bounds and bisection search (for more info check out the Wikipedia page on bisection search) to find the smallest monthly payment to the cent such that we can pay off the debt within a year.
