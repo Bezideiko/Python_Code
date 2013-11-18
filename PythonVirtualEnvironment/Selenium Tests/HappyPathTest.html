@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://core.bdz.transportinfo.bg/core/ticketprice/?from_station=1&to_station=3&discount=&date_f=11.11.2013&trip_f=2621&seatclass_f=2&addons_f=reserved-seat&date_r=11.11.2013&trip_r=2580&seatclass_r=2&addons_r=reserved-seat#" />
+<title>HappyPathTest</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">HappyPathTest</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=id_username</td>
+	<td>admin</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=id_password</td>
+	<td>adminadmin</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[2]/a/span</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=id_from_station</td>
+	<td>label=СОФИЯ</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=id_to_station</td>
+	<td>label=БУРГАС</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#id_date_r-icon &gt; i.glyphicon.glyphicon-calendar</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[5]/div/table/tbody/tr[3]/td[5]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Изчисли']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=span.label.label-success</td>
+	<td>Билет 1 - 30.30лв</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=id_go-addons_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=id_ret-addons_2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//input[@value='Изчисли']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=span.label.label-success</td>
+	<td>Билет 1 - 31.30лв</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=i.clip-chevron-down</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Изход</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
